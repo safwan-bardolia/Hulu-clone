@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.header > img {
+    /* keeps the aspect-ratio */
+    object-fit: contain;
+    height: 80px;
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;/**/
+    cursor: pointer;
+    width: 100px;
+}
+
+/* .header_icon > .MuiSvgIcon-root {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.header_icon > p {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    /* another method of centering element */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+}
+
+/* always display this element (which is p of of 1st .header_icon container) */
+.show > p{
+    display: inline;
+}
+
+/* when we hover over .header_icon container then we target its p element */
+.header_icon:hover > p {
+    display: inline;
+}
+
+/* ********************************************************************************************************************************* */
+
+/* we have used overflow-x: scroll, now we have to use this functionality but we don't want to show scroll-bar */
+/* so we add following trick */
+
+/* Hide scrollbar for Chrome, Safari & Opera */
+.header::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge & Firefox */
+.header {
+    -ms-overflow-style: none; /*IE & enge*/
+    scrollbar-width: none; /*firefox*/
+}
+
+/* ********************************************************************************************************************************* */
+

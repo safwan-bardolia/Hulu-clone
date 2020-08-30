@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    color: white;
+    overflow-x: scroll;
+    padding:10px;
+    padding-left: 40px;
+}
+
+/* ********************************************************************************************************************************* */
+
+/* we have used overflow-x: scroll, now we have to use this functionality but we don't want to show scroll-bar */
+/* so we add following trick */
+
+/* Hide scrollbar for Chrome, Safari & Opera */
+.nav::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge & Firefox */
+.nav {
+    -ms-overflow-style: none; /*IE & enge*/
+    scrollbar-width: none; /*firefox*/
+}
+
+/* ********************************************************************************************************************************* */
+
+.nav > h2 {
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 500;
+    opacity: 0.7;
+    /* take 50ms to transform & transform-out */
+    transition: transform 50ms ease-out;
+}
+
+.nav > h2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}

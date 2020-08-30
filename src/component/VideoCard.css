@@ -1,0 +1,41 @@
+.videoCard {
+    color: white;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    transition:transform 100ms ease-in;
+}
+
+.videoCard:hover {
+    transform: scale(1.09);
+}
+
+.videoCard > img {
+    height: 300px;
+    /* it keeps the aspect ratio, without this image will be stretched  */
+    object-fit: contain;
+    width: 500px;
+}
+
+.videoCard > h2 {
+    padding-top: 10px;
+}
+
+/* hide .videoCard_stats */
+.videoCard_stats {
+    display: none;
+}
+
+/* display .videoCard_stats only when you hover it on particular videoCard */
+.videoCard:hover > .videoCard_stats {
+    display: flex;
+    align-items: center;
+}
+
+.MuiSvgIcon-root{
+    padding-left: 13px;
+}
+
+.MuiSvgIcon-root:hover {
+    color:rgb(35, 35, 165);
+}

@@ -1,0 +1,4 @@
+/* entire background of app */
+.app {
+    background-image: linear-gradient(to right, #051421, #042727);
+}

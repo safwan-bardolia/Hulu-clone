@@ -1,0 +1,7 @@
+/* very responsive with this 3 lines of code */
+.results > div {
+    display: flex;
+    flex-wrap: wrap;
+    /* for centering */
+    justify-content: center;
+}
